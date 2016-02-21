@@ -1,5 +1,16 @@
 #pragma once
 
+/*************************************************************************
+ *
+ * This Example demonstrates how to to save multiple screenshots of your work 
+ * using key command "x". The saved screenshot will redraw on your screen and 
+ * save to the bin >> data folder.
+ * For more information regarding this example take a look at the README.md
+ * and "How to save a screenshot using code" How To.
+ *
+ * Updated 02/20/16 at the ofDocSprint in Denver by Nicole Yi Messier
+ *************************************************************************/
+
 #include "ofMain.h"
 
 class ofApp : public ofBaseApp{
@@ -22,7 +33,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);		
 		
-		int 				snapCounter;
+		int 				snapCounter; //counter 
 		string 				snapString;
 		ofImage 			img;
 		ofTrueTypeFont		cooper;

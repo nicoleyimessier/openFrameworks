@@ -3,8 +3,12 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    
+    //set up variables for saving screenshot process
 	snapCounter = 0;
 	bSnapshot = false;
+    
+    //set up variables for drawing
 	cooper.load("cooperBlack.ttf", 50);
 	phase = 0;
 }
@@ -23,9 +27,6 @@ void ofApp::draw(){
 
 	ofSetHexColor(0xDDDDFF);
 	ofDrawRectangle(200,200,300,180);
-
-
-
 	ofEnableAlphaBlending();
 	ofSetColor(255,255,255,128);
 	glPushMatrix();
